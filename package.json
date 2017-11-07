@@ -1,0 +1,22 @@
+{
+  "name": "debug4js",
+  "version": "1.0.0",
+  "description": "Uses the current file as the logger name for the debug module",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericholiveira/debug4js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["debug","formatted","folder"],
+  "author": {
+    "name": "Erich Oliveira",
+    "url": "http://ericholiveira.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0"
+  }
+}
