@@ -9,8 +9,9 @@ function _getCallerFile() {
     let currentfile;
     Error.prepareStackTrace = prepare
     currentfile = err.stack.shift().getFileName()
-    while (err.stack.length && currentfile !== callerfile) {
+    while (err.stack.length) {
       callerfile = err.stack.shift().getFileName()
+      if(currentfile !== callerfile) break
     }
   } catch (e) {}
   Error.prepareStackTrace = originalFunc
